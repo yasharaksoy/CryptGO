@@ -15,7 +15,7 @@ A cryptocurrency exchange built in microservice architecture.
 ### Messaging
 
 - Kafka :- Publisher/Consumer Model (Message Broker).
-- gRPC :- .
+<!-- - gRPC :- . -->
 
 ### Database & Storage
 
