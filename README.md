@@ -10,7 +10,7 @@ A cryptocurrency exchange built in microservice architecture.
 
 - Docker for containerization.
 - GCP for running instances of each M.S and dependencies on the cloud.
-  - [Deprecated]: GCP free trial expired.
+  - [Will Deprecate]: GCP free trial expiry imminent.
 
 ### Messaging
 
