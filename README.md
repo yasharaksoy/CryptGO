@@ -2,7 +2,7 @@
 
 A cryptocurrency exchange built in microservice architecture.
 
-# Architecture
+<!-- # Architecture
 
 ## Solution Architecture
 
@@ -15,7 +15,7 @@ A cryptocurrency exchange built in microservice architecture.
 ### Messaging
 
 - Kafka :- Publisher/Consumer Model (Message Broker).
-<!-- - gRPC :- . -->
+- gRPC :- .
 
 ### Database & Storage
 
@@ -30,7 +30,7 @@ A cryptocurrency exchange built in microservice architecture.
 
 - Auth0 (golang JWTs).
 
-<!-- ### Services
+### Services
 
 - Gateway Service
 - Match Service
