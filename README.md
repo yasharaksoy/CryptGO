@@ -2,9 +2,15 @@
 
 A cryptocurrency exchange built in microservice architecture.
 
-<!-- # Architecture
+It follows from the ViaBTC exchange server, by design.
 
-## Solution Architecture
+<img src="https://github.com/ReshiAdavan/CryptGO/blob/master/imgs/CryptGO_Arch.PNG" />
+
+## Inspiration
+
+WIP
+
+## Architecture
 
 ### DevOps
 
@@ -15,7 +21,7 @@ A cryptocurrency exchange built in microservice architecture.
 ### Messaging
 
 - Kafka :- Publisher/Consumer Model (Message Broker).
-- gRPC :- .
+- gRPC :- Microservice Cross-Communication.
 
 ### Database & Storage
 
@@ -28,7 +34,7 @@ A cryptocurrency exchange built in microservice architecture.
 
 ### Authentication & Security
 
-- Auth0 (golang JWTs).
+- Auth0 (Golang JWTs).
 
 ### Services
 
@@ -38,4 +44,4 @@ A cryptocurrency exchange built in microservice architecture.
 - Wallet Service
 - WS Service
 
-- Rest is TBD -->
+WIP
