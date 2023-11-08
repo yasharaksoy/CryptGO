@@ -10,7 +10,7 @@ It follows from the ViaBTC exchange server, by design.
 
 Before I was invested in web3.0, blockchain, decentralized systems, etc., as mentioned in [Catena](https://github.com/ReshiAdavan/Catena), I was interested in Crypto because of a Senior Engineer I worked with over Winter 2023. Looking into Crypto and exchanges, I wanted to make one (at this point whenever I want to learn more of something I make a tool that focuses on it/revolves around it). Thats exactly what I did.
 
-The choice of cryptocurrency was ethereum because of [Vitalik Buterin](https://www.linkedin.com/in/vitalik-buterin-267a7450/?originalSubdomain=ca), the infamous Waterloo student who founded [Ethereum](https://ethereum.org/en/). At the very least I am inspired and motivated to be like him.
+The choice of cryptocurrency was ethereum because of [Vitalik Buterin](https://www.linkedin.com/in/vitalik-buterin-267a7450/?originalSubdomain=ca), the infamous Waterloo student who founded [Ethereum](https://ethereum.org/en/). At the very least I am inspired by him and motivated to be like him.
 
 ## Architecture
 
