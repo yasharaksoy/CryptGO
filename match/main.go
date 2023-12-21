@@ -18,9 +18,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 
+	skiplist "github.com/ReshiAdavan/CryptGO/match/fast-skiplist"
 	"github.com/ReshiAdavan/CryptGO/messaging"
 	pb "github.com/ReshiAdavan/CryptGO/protos"
-	skiplist "github.com/ReshiAdavan/CryptGO/svc-match/fast-skiplist"
 	log "github.com/ReshiAdavan/CryptGO/utils/glog"
 )
 
