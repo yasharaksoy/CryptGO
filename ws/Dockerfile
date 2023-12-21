@@ -7,13 +7,13 @@ WORKDIR /go/src/CryptGO/
 COPY . .
 
 ENV GOPATH=/go
-RUN GO111MODULE=on go install -v ./svc-gateway
-RUN GO111MODULE=on go install -v ./svc-match
-RUN GO111MODULE=on go install -v ./svc-memorystore
-RUN GO111MODULE=on go install -v ./svc-sql
-RUN GO111MODULE=on go install -v ./svc-wallet
-RUN GO111MODULE=on go install -v ./svc-wallet/ethereum
-RUN GO111MODULE=on go install -v ./svc-ws
+RUN GO111MODULE=on go install -v ./gateway
+RUN GO111MODULE=on go install -v ./match
+RUN GO111MODULE=on go install -v ./memorystore
+RUN GO111MODULE=on go install -v ./sql
+RUN GO111MODULE=on go install -v ./wallet
+RUN GO111MODULE=on go install -v ./wallet/ethereum
+RUN GO111MODULE=on go install -v ./ws
 
 FROM alpine:3.8
 
@@ -22,6 +22,6 @@ RUN sed -i -e 's/v[[:digit:]]\.[[:digit:]]/edge/g' /etc/apk/repositories && \
     update-ca-certificates
 
 WORKDIR /CryptGO/
-COPY --from=builder /go/bin/svc-ws .
+COPY --from=builder /go/bin/ws .
 
-ENTRYPOINT ["/CryptGO/svc-ws"]
+ENTRYPOINT ["/CryptGO/ws"]

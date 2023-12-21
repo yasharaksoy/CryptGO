@@ -9,7 +9,7 @@ import (
 	"github.com/gofrs/uuid"
 	"github.com/shopspring/decimal"
 
-	skiplist "github.com/ReshiAdavan/CryptGO/svc-match/fast-skiplist"
+	skiplist "github.com/ReshiAdavan/CryptGO/match/fast-skiplist"
 	"github.com/ReshiAdavan/CryptGO/utils"
 	log "github.com/ReshiAdavan/CryptGO/utils/glog"
 )

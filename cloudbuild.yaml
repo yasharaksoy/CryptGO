@@ -4,7 +4,7 @@ steps:
       [
         "build",
         "-f",
-        "svc-match/Dockerfile",
+        "match/Dockerfile",
         "-t",
         "gcr.io/$PROJECT_ID/$REPO_NAME/match:latest",
         "-t",
@@ -16,7 +16,7 @@ steps:
       [
         "build",
         "-f",
-        "svc-memorystore/Dockerfile",
+        "memorystore/Dockerfile",
         "-t",
         "gcr.io/$PROJECT_ID/$REPO_NAME/memorystore:latest",
         "-t",
@@ -28,7 +28,7 @@ steps:
       [
         "build",
         "-f",
-        "svc-sql/Dockerfile",
+        "sql/Dockerfile",
         "-t",
         "gcr.io/$PROJECT_ID/$REPO_NAME/sql:latest",
         "-t",
@@ -40,7 +40,7 @@ steps:
       [
         "build",
         "-f",
-        "svc-wallet/Dockerfile",
+        "wallet/Dockerfile",
         "-t",
         "gcr.io/$PROJECT_ID/$REPO_NAME/wallet:latest",
         "-t",
@@ -52,7 +52,7 @@ steps:
       [
         "build",
         "-f",
-        "svc-ws/Dockerfile",
+        "ws/Dockerfile",
         "-t",
         "gcr.io/$PROJECT_ID/$REPO_NAME/ws:latest",
         "-t",
@@ -64,7 +64,7 @@ steps:
       [
         "build",
         "-f",
-        "svc-gateway/Dockerfile",
+        "gateway/Dockerfile",
         "-t",
         "gcr.io/$PROJECT_ID/$REPO_NAME/gateway:latest",
         "-t",
@@ -76,7 +76,7 @@ steps:
       [
         "build",
         "-f",
-        "svc-wallet/ethereum/Dockerfile",
+        "wallet/ethereum/Dockerfile",
         "-t",
         "gcr.io/$PROJECT_ID/$REPO_NAME/ethereum:latest",
         "-t",
