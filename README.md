@@ -242,3 +242,7 @@ Functionality:
 
 - Provides utilities related to time manipulation or scheduling.
 - Contains functions for time formatting, parsing, and managing time-based tasks or events.
+
+---
+
+If you made it this far, congrats! That concludes CryptGO's README.
