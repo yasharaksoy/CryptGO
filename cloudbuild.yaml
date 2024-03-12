@@ -196,3 +196,5 @@ steps:
         "CryptGO-wallet",
         "ethereum=gcr.io/$PROJECT_ID/$REPO_NAME/ethereum:$COMMIT_SHA",
       ]
+options:
+  logging: NONE
