@@ -11,6 +11,7 @@ steps:
         "gcr.io/$PROJECT_ID/$REPO_NAME/match:$COMMIT_SHA",
         ".",
       ]
+
   - name: "gcr.io/cloud-builders/docker"
     args:
       [
@@ -84,33 +85,33 @@ steps:
         ".",
       ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/match:latest"]
+    args: [ "push", "gcr.io/$PROJECT_ID/$REPO_NAME/match:latest" ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/match:$COMMIT_SHA"]
+    args: [ "push", "gcr.io/$PROJECT_ID/$REPO_NAME/match:$COMMIT_SHA" ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/memorystore:latest"]
+    args: [ "push", "gcr.io/$PROJECT_ID/$REPO_NAME/memorystore:latest" ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/memorystore:$COMMIT_SHA"]
+    args: [ "push", "gcr.io/$PROJECT_ID/$REPO_NAME/memorystore:$COMMIT_SHA" ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/sql:latest"]
+    args: [ "push", "gcr.io/$PROJECT_ID/$REPO_NAME/sql:latest" ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/sql:$COMMIT_SHA"]
+    args: [ "push", "gcr.io/$PROJECT_ID/$REPO_NAME/sql:$COMMIT_SHA" ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/wallet:latest"]
+    args: [ "push", "gcr.io/$PROJECT_ID/$REPO_NAME/wallet:latest" ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/wallet:$COMMIT_SHA"]
+    args: [ "push", "gcr.io/$PROJECT_ID/$REPO_NAME/wallet:$COMMIT_SHA" ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/ws:latest"]
+    args: [ "push", "gcr.io/$PROJECT_ID/$REPO_NAME/ws:latest" ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/ws:$COMMIT_SHA"]
+    args: [ "push", "gcr.io/$PROJECT_ID/$REPO_NAME/ws:$COMMIT_SHA" ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/gateway:latest"]
+    args: [ "push", "gcr.io/$PROJECT_ID/$REPO_NAME/gateway:latest" ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/gateway:$COMMIT_SHA"]
+    args: [ "push", "gcr.io/$PROJECT_ID/$REPO_NAME/gateway:$COMMIT_SHA" ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/ethereum:latest"]
+    args: [ "push", "gcr.io/$PROJECT_ID/$REPO_NAME/ethereum:latest" ]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/$REPO_NAME/ethereum:$COMMIT_SHA"]
+    args: [ "push", "gcr.io/$PROJECT_ID/$REPO_NAME/ethereum:$COMMIT_SHA" ]
   - name: "gcr.io/cloud-builders/kubectl"
     env:
       - "CLOUDSDK_COMPUTE_ZONE=us-central1-a"
@@ -195,3 +196,5 @@ steps:
         "CryptGO-wallet",
         "ethereum=gcr.io/$PROJECT_ID/$REPO_NAME/ethereum:$COMMIT_SHA",
       ]
+options:
+  logging: CLOUD_LOGGING_ONLY
